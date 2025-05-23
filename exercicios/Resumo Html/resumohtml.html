@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Resumo Completo de HTML</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      color: #333;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #4caf50;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #2196f3;
+      margin-top: 20px;
+    }
+
+    .caixa {
+      background-color: #fff;
+      border: 2px solid #4caf50;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .exemplo {
+      background-color: #222;
+      color: #f8f8f8;
+      padding: 10px;
+      border-radius: 8px;
+      font-family: 'Courier New', Courier, monospace;
+      margin-top: 10px;
+      white-space: pre-wrap;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .destaque {
+      color: #e91e63;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>📚 Resumo Completo de HTML</h1>
+
+  <div class="caixa">
+    <h2>&lt;!DOCTYPE html&gt;</h2>
+    <p>Define que o documento está usando HTML5, é a declaração inicial obrigatória.</p>
+    <div class="exemplo">
+      &lt;!DOCTYPE html&gt;
+    </div>
+  </div>
+
+  <div class="caixa">
+    <h2>&lt;html&gt; ... &lt;/html&gt;</h2>
+    <p>Envolve todo o conteúdo da página e define o idioma com o atributo <code>lang</code>.</p>
+    <div class="exemplo">
+      &lt;html lang="pt-br"&gt;<br>
+      &nbsp;&nbsp;...conteúdo aqui...<br>
+      &lt;/html&gt;
+    </div>
+  </div>
+
+  <div class="caixa">
+    <h2>&lt;head&gt; ... &lt;/head&gt;</h2>
+    <p>Contém informações não visíveis na página, como título, links para CSS, metadados e scripts.</p>
+    <div class="exemplo">
+      &lt;head&gt;<br>
+      &nbsp;&nbsp;&lt;title&gt;Título da Página&lt;/title&gt;<br>
+      &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+      &lt;/head&gt;
+    </div>
+  </div>
+
+  <div class="caixa">
+    <h2>&lt;body&gt; ... &lt;/body&gt;</h2>
+    <p>Contém o conteúdo visível da página, como textos, imagens, vídeos, links, etc.</p>
+    <div class="exemplo">
+      &lt;body&gt;<br>
+      &nbsp;&nbsp;&lt;h1&gt;Olá Mundo!&lt;/h1&gt;<br>
+      &nbsp;&nbsp;&lt;p&gt;Texto de exemplo&lt;/p&gt;<br>
+      &lt;/body&gt;
+    </div>
+  </div>
+
+  <div class="caixa">
+    <h2>Tags comuns para estrutura e conteúdo</h2>
+    <ul>
+      <li><span class="destaque">&lt;h1&gt; a &lt;h6&gt;</span> — títulos e subtítulos (h1 é o mais importante)</li>
+      <li><span class="destaque">&lt;p&gt;</span> — parágrafo de texto</li>
+      <li><span class="destaque">&lt;a&gt;</span> — link (com atributo <code>href</code>)</li>
+      <li><span class="destaque">&lt;img&gt;</span> — imagem (com atributo <code>src</code> e <code>alt</code>)</li>
+      <li><span class="destaque">&lt;ul&gt;</span> e <span class="destaque">&lt;ol&gt;</span> — listas não ordenadas e ordenadas</li>
+      <li><span class="destaque">&lt;li&gt;</span> — item de lista</li>
+      <li><span class="destaque">&lt;div&gt;</span> — divisão de conteúdo, usada para agrupar elementos</li>
+      <li><span class="destaque">&lt;span&gt;</span> — marcação inline para estilização de texto</li>
+    </ul>
+  </div>
+
+  <div class="caixa">
+    <h2>Manipulação e uso de imagens</h2>
+    <p>Use a tag <code>&lt;img&gt;</code> para inserir imagens. Sempre defina o atributo <code>alt</code> para acessibilidade.</p>
+    <p>Para tornar imagens responsivas, use CSS com <code>max-width: 100%; height: auto;</code>.</p>
+    <div class="exemplo">
+      &lt;img src="foto.jpg" alt="Descrição da imagem" style="max-width: 100%; height: auto;"&gt;
+    </div>
+  </div>
+
+  <div class="caixa">
+    <h2>Hospedagem e incorporação de vídeos externos</h2>
+    <p>Você pode incorporar vídeos hospedados em plataformas como YouTube usando a tag <code>&lt;iframe&gt;</code>.</p>
+    <p>Isso evita o uso excessivo do seu servidor e facilita o acesso.</p>
+    <div class="exemplo">
+      &lt;iframe width="560" height="315" <br>
+      &nbsp;&nbsp;src="https://www.youtube-nocookie.com/embed/ID_DO_VIDEO" <br>
+      &nbsp;&nbsp;title="YouTube video player" frameborder="0" <br>
+      &nbsp;&nbsp;allowfullscreen&gt;&lt;/iframe&gt;
+    </div>
+  </div>
+
+  <div class="caixa">
+    <h2>Como criar links e navegar entre páginas do seu site</h2>
+    <p>Use a tag <code>&lt;a&gt;</code> para criar links que levam o usuário para outra página.</p>
+    <p>Por exemplo, se você tiver um arquivo <code>pagina2.html</code>, você pode criar um link assim:</p>
+    <div class="exemplo">
+      &lt;a href="pagina2.html"&gt;Ir para a Página 2&lt;/a&gt;
+    </div>
+    <p>Ao clicar, o navegador carrega a página <code>pagina2.html</code> no lugar da atual.</p>
+    <p>Para criar a segunda página, basta criar um arquivo <code>pagina2.html</code> com conteúdo HTML, por exemplo:</p>
+    <div class="exemplo">
+      &lt;!DOCTYPE html&gt;<br>
+      &lt;html lang="pt-br"&gt;<br>
+      &lt;head&gt;<br>
+      &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+      &nbsp;&nbsp;&lt;title&gt;Página 2&lt;/title&gt;<br>
+      &lt;/head&gt;<br>
+      &lt;body&gt;<br>
+      &nbsp;&nbsp;&lt;h1&gt;Bem-vindo à Página 2&lt;/h1&gt;<br>
+      &nbsp;&nbsp;&lt;p&gt;Aqui está o conteúdo da segunda página.&lt;/p&gt;<br>
+      &nbsp;&nbsp;&lt;a href="index.html"&gt;Voltar para a Página Inicial&lt;/a&gt;<br>
+      &lt;/body&gt;<br>
+      &lt;/html&gt;
+    </div>
+    <p>Assim o usuário pode navegar entre a página inicial e a segunda página do seu site.</p>
+  </div>
+
+  <div class="caixa">
+    <h2>Tags auxiliares importantes</h2>
+    <ul>
+      <li><span class="destaque">&lt;br&gt;</span> — quebra de linha (não tem fechamento)</li>
+      <li><span class="destaque">&lt;hr&gt;</span> — linha horizontal para separar conteúdo</li>
+      <li><span class="destaque">&lt;meta&gt;</span> — informações sobre a página, como charset e viewport</li>
+      <li><span class="destaque">&lt;link&gt;</span> — link para arquivos externos, como CSS</li>
+      <li><span class="destaque">&lt;script&gt;</span> — código JavaScript</li>
+    </ul>
+  </div>
+
+  <div class="caixa">
+    <h2>Resumo final</h2>
+    <p>O HTML é a <strong>estrutura básica</strong> de uma página web. As tags organizam o conteúdo e definem sua função. Entender essas tags é o primeiro passo para criar sites modernos, responsivos e acessíveis.</p>
+  </div>
+
+</body>
+
+</ht

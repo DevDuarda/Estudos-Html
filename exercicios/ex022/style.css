@@ -1,0 +1,33 @@
+@charset "UTF-8";
+body {
+      background-color: #171729;
+      font-family: Consolas, monospace;
+      color: #f1aa31;
+    }
+
+.definicao{ border: 2px solid #f1aa31;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      background-color: #1f1f2e;}
+.exemplo{ border: 2px solid #f1aa31;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      background-color: #1f1f2e;}
+.vantagem{ border: 2px solid #f1aa31;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      background-color: #1f1f2e;}
+.dica{ border: 2px solid #f1aa31;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      background-color: #1f1f2e;}
+.conclusao{ border: 2px solid #f1aa31;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      background-color: #1f1f2e;}
+.

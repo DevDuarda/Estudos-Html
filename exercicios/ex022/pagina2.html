@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Estilos CSS Internos</title>
+  <style>
+    body {
+      background-color: #171729;
+      font-family: Consolas, monospace;
+      color: #f1aa31;
+    }
+
+    h1 {
+      color: #f1aa31;
+    }
+
+    .blocoum, .blocodois, .desvantagens, .exemplo {
+      border: 2px solid #f1aa31;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      background-color: #1f1f2e;
+    }
+    .dica{
+       border: 2px solid #f1aa31;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      background-color: #1f1f2e;
+
+    }
+    .conclusao {
+       border: 2px solid #f1aa31;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      background-color: #1f1f2e;
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center";> Estilos CSS internos ou Locais</h1>
+  <p style="text-align: center";>Como observado em minhas anotações anteriores, o estilo inline fica muito confuso e dificulta a manutenção.</p>
+  <br><br>
+
+  <div class="blocoum">
+    <h2>O que são estilos CSS Internos:</h2>
+    <br>
+    <p>Definição: São regras de estilo definidas dentro da tag <code>&lt;style&gt;</code> no cabeçalho (<code>&lt;head&gt;</code>) de um documento HTML.</p>
+  </div>
+
+  <div class="blocodois">
+    <h2>Vantagens:</h2>
+    <ul>
+      <li>Organiza o código, separando conteúdo e estilo.</li>
+      <li>Facilita a manutenção em projetos pequenos a médios.</li>
+    </ul>
+  </div>
+
+  <div class="desvantagens">
+    <h2>Desvantagens:</h2>
+    <ul>
+      <li>Não é reutilizável em outras páginas.</li>
+      <li>Pode tornar o arquivo HTML grande e difícil de gerenciar em projetos maiores.</li>
+    </ul>
+  </div>
+  <br>
+  <br>
+  <p style="text-align: center" ;>   Depois dessas pequenas observações, vamos à parte prática de como utilizar o Estilo CSS interno:</p> <br>
+  <br>
+  <br>
+
+  <div class="exemplo">
+    <h2>Exemplo:</h2>
+    <p>Abra seu editor de código (como o VSCode).</p>
+    <p>Dentro da tag <code>&lt;head&gt;</code>, adicione a tag <code>&lt;style&gt;</code>:</p>
+    <p>Dentro da tag <code>&lt;style&gt;</code>, defina suas regras CSS. Por exemplo:</p>
+    <pre style="background-color: #171729; color: #f1aa31; padding: 10px; border-radius: 5px;">
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+    </pre>
+  </div>
+<div class="dica">
+  <p>
+    <h1>⚠️ Dicas Importantes:</h1>
+  <ul>
+    <li>A tag &lt; style &gt; deve estar dentro da tag &lt; head &gt; para seguir as boas práticas de desenvolvimento.</li>
+    <li>Evite usar muitos estilos internos em projetos grandes; prefira estilos externos para melhor organização e reutilização</li>
+    </ul>
+  </p>
+</div>
+
+<div class="conclusao">
+  <h2>🚀 Conclusão</h2>
+  <ul>
+    <li>Eu aprendi o que são estilos CSS internos, que também são chamados de CSS local.</li>
+    <li>Entendi que eles são aplicados dentro da própria página HTML, usando a tag &lt;style&gt; que fica dentro da seção &lt;head&gt;.</li>
+    <li>Percebi que usar CSS interno deixa meu código muito mais organizado do que usar CSS inline, que acaba deixando tudo confuso e bagunçado.</li>
+    <li>Descobri que com o CSS interno eu consigo aplicar estilos em vários elementos da página de forma bem mais prática, sem precisar ficar repetindo style em cada tag.</li>
+    <li>Compreendi as vantagens, como ter um código mais organizado e mais fácil de editar, principalmente em projetos menores ou médios.</li>
+    <li>Também aprendi as desvantagens, já que esse tipo de CSS não funciona para outras páginas e pode deixar o arquivo muito grande se o site for maior.</li>
+  </ul>
+  <br>
+  <hr>
+  <p style="text-align: center";>🎉 Mais uma coisa para melhorar meu site!</p>
+  <p style="text-align: center";>Se quiser, clique no link abaixo para ir para a próxima página onde continuo os estudos sobre CSS.</p>
+<div style="text-align: center;">
+  <a href="pagina3.html" target="_blank" style="color: #f1aa31;">
+    ➡️ Ir para a próxima página
+  </a>
+</div>
+
+</div>
+</body>
+</html>

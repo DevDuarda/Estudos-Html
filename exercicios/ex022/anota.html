@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilos Inline e Alinhamento</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      background-color: #171729;
+      color: #f8f8f8;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .bloco {
+      border: 2px solid #f1aa31;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      background-color: #1f1f2e;
+    }
+
+    h1 {
+      color: #f1aa31;
+      text-align: center;
+    }
+
+    h2 {
+      color: #f1aa31;
+      border-bottom: 2px solid #f1aa31;
+      padding-bottom: 5px;
+    }
+
+    p, ul, li {
+      color: #f8f8f8;
+    }
+
+    .exemplo {
+      color: #f1aa31;
+      background-color: #171729;
+      padding: 8px;
+      border-radius: 5px;
+      display: inline-block;
+      font-family: Consolas, monospace;
+    }
+
+    .alinhado {
+      color: #f1aa31;
+    }
+
+    .link {
+      color: #f1aa31;
+      text-decoration: none;
+      border: 1px solid #f1aa31;
+      padding: 8px 12px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .link:hover {
+      background-color: #f1aa31;
+      color: #171729;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>🎨 Estilos Inline e Alinhamento no CSS</h1>
+
+<!-- Bloco 1 -->
+<div class="bloco">
+  <h2>📝 O que são Estilos Inline?</h2>
+  <p>Estilos inline são regras CSS aplicadas diretamente dentro da tag HTML usando o atributo <code>style</code>.</p>
+  <p>
+    ✔️ Úteis para pequenas edições rápidas.<br>
+    ❌ Não são recomendados para projetos grandes, pois dificultam a manutenção.<br>
+    ❌ Poluem o código e podem causar problemas de organização.<br>
+    ❌ Misturam conteúdo (HTML) com estilo (CSS), o que não é uma boa prática.<br>
+    ❌ Só devem ser usados em casos muito específicos.
+  </p>
+</div>
+
+<!-- Bloco 2 -->
+<div class="bloco">
+  <h2>💻 Como aplicar um estilo inline?</h2>
+  <p>Adicionamos o atributo <code>style</code> dentro da tag HTML.</p>
+  <p>👉 Exemplo:</p>
+  <p class="exemplo">&lt;p style="color: #f1aa31; font-family: Consolas;"&gt;Seu texto aqui&lt;/p&gt;</p>
+</div>
+
+<!-- Bloco 3 -->
+<div class="bloco">
+  <h2>📐 Alinhamento de Texto (text-align)</h2>
+  <p class="alinhado" style="text-align: left;">
+    🔸 <strong>text-align: left;</strong> ➡️ Alinhado à esquerda (padrão).
+  </p>
+  <p class="alinhado" style="text-align: right;">
+    🔸 <strong>text-align: right;</strong> ➡️ Alinhado à direita.
+  </p>
+  <p class="alinhado" style="text-align: center;">
+    🔸 <strong>text-align: center;</strong> ➡️ Centralizado.
+  </p>
+  <p class="alinhado" style="text-align: justify;">
+    🔸 <strong>text-align: justify;</strong> ➡️ Justificado, alinhado dos dois lados, ideal para blocos de texto maiores.
+  </p>
+</div>
+
+<!-- Bloco 4 -->
+<div class="bloco">
+  <h2>🔧 Outras Propriedades CSS Inline</h2>
+  <ul>
+    <li><strong>color:</strong> Cor do texto. (Ex.: <span class="exemplo">color: #f1aa31;</span>)</li>
+    <li><strong>background-color:</strong> Cor de fundo.</li>
+    <li><strong>font-family:</strong> Fonte do texto.</li>
+    <li><strong>font-size:</strong> Tamanho da fonte.</li>
+    <li><strong>text-align:</strong> Alinhamento (left, right, center, justify).</li>
+    <li><strong>padding:</strong> Espaçamento interno.</li>
+    <li><strong>margin:</strong> Espaçamento externo.</li>
+    <li><strong>border:</strong> Cria uma borda ao redor do elemento.</li>
+  </ul>
+</div>
+
+<!-- Bloco 5 -->
+<div class="bloco">
+  <h2>🚀 Conclusão</h2>
+  <p>
+    Nesta aula, aprendi como centralizar textos e outras formas de alinhamento, como adicionar cores ao meu site e outros estilos básicos. Isso é só o início — vem muita coisa legal pela frente!
+  </p>
+  <p>🎉 Agora é só continuar praticando e melhorando meu site!</p>
+  <p>Se quiser, clique no link abaixo para ir para a próxima página onde continuo os estudos sobre CSS.</p>
+  <a class="link" href="pagina2.html" target="_blank">➡️ Ir para a próxima página</a>
+</div>
+
+</body>
+</html>
