@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- Declara que é um documento HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Suporte para acentuação -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Torna o site responsivo, se ajustando ao tamanho da tela -->
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Ícone na aba do navegador -->
+
+  <title>Elemento Áudio no HTML</title> <!-- Título da aba do navegador -->
+
+  <style>
+    /* Estilo simples para destacar o passo a passo */
+    .passo-a-passo {
+      background-color: #7b5baf;
+      padding: 15px;
+      border: 2px solid #252526;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 20px 0;
+    }
+    .passo-a-passo h2 {
+      color: #333;
+    }
+    .passo-a-passo li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+
+<body> <!-- Conteúdo visível da página -->
+
+  <h1>Hoje vamos falar sobre o elemento de Áudio no HTML</h1>
+  <!-- Título principal da página -->
+
+  <p><strong>Elemento &lt;audio&gt;</strong></p>
+  <!-- Parágrafo explicando o uso do elemento audio -->
+
+  <p>
+    Você pode inserir arquivos de som no seu site utilizando a tag
+    <code>&lt;audio&gt;</code>. Abaixo temos um exemplo funcional.
+  </p>
+
+  <hr> <!-- Linha horizontal para separação visual -->
+
+  <p>Vamos utilizar a tag <code>&lt;audio&gt;</code> com diferentes formatos de áudio:</p>
+
+  <audio preload="auto" controls loop
+    <!--
+      controls → mostra os controles de play, pause, volume, etc.
+      autoplay → faz o áudio começar automaticamente (pode não funcionar em alguns navegadores sem muted).
+      loop → faz o áudio repetir infinitamente.
+      muted → inicia o áudio sem som (necessário para autoplay funcionar em muitos navegadores).
+      preload → controla o carregamento do áudio:
+        auto = carrega todo o áudio automaticamente.
+        metadata = carrega apenas informações (tempo, duração).
+        none = não carrega nada até o usuário dar play.
+    -->
+
+    <source src="midia/audio.mp3" type="audio/mpeg">
+    <source src="midia/audio.ogg" type="audio/ogg">
+    <source src="midia/audio.wav" type="audio/wav">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <hr>
+
+  <!-- Caixa de passo a passo visível no site -->
+  <div class="passo-a-passo">
+    <h2>🎧 Passo a passo para usar áudio no HTML</h2>
+    <ol>
+      <li><strong>Organize seus arquivos de áudio:</strong> Prefira formatos .mp3, .ogg e .wav para garantir compatibilidade.</li>
+      <li><strong>Use a tag &lt;audio&gt;:</strong> Ela cria o player de áudio na página.</li>
+      <li><strong>Adicione o atributo <code>controls</code>:</strong> Exibe os botões de play, pause e volume.</li>
+      <li><strong>Inclua outros atributos se desejar:</strong>
+        <ul>
+          <li><strong>autoplay</strong> → O áudio começa automaticamente (pode precisar de <strong>muted</strong>).</li>
+          <li><strong>loop</strong> → Faz o áudio tocar em repetição.</li>
+          <li><strong>muted</strong> → Começa sem som (útil para autoplay).</li>
+          <li><strong>preload</strong> → Decide se o áudio será carregado antes:
+            <ul>
+              <li><strong>auto</strong> → Carrega tudo automaticamente.</li>
+              <li><strong>metadata</strong> → Carrega só informações do áudio (tamanho, duração).</li>
+              <li><strong>none</strong> → Só carrega quando o usuário clicar em play.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Dentro da tag &lt;audio&gt;, use &lt;source&gt;:</strong> Cada &lt;source&gt; indica um arquivo de áudio e seu tipo.</li>
+      <li><strong>Inclua uma mensagem alternativa:</strong> Será exibida se o navegador não suportar áudio.</li>
+      <li><strong>Teste:</strong> Em diferentes navegadores e dispositivos para garantir que funciona.</li>
+    </ol>
+  </div>
+
+</body> <!-- Fim do corpo do site -->
+
+</html> <!-- Fim do documento HTML -->

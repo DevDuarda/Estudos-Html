@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- Declara que é um documento HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Suporte para acentuação -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Torna o site responsivo, se ajustando ao tamanho da tela -->
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Ícone na aba do navegador -->
+
+  <title>Imagens Dinâmicas</title> <!-- Título da aba do navegador -->
+
+  <style>
+    /* Estilo simples para destacar o passo a passo */
+    .passo-a-passo {
+      background-color: #7b5baf;
+      padding: 15px;
+      border: 2px solid #252526;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 20px 0;
+    }
+    .passo-a-passo h2 {
+      color: #333;
+    }
+    .passo-a-passo li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+
+<body> <!-- Conteúdo visível da página -->
+
+  <h1>Hoje vamos falar sobre Imagens Dinâmicas</h1>
+  <!-- Título principal da página -->
+
+  <p><strong>Elemento &lt;picture&gt;</strong></p>
+  <!-- Parágrafo explicando o uso do elemento picture -->
+
+  <p>
+    Tente abrir este site em vários dispositivos diferentes ou simplesmente
+    aumente e diminua o tamanho da janela do navegador.
+  </p>
+  <!-- Instruções para testar o comportamento responsivo das imagens -->
+
+  <hr> <!-- Linha horizontal para separação visual -->
+
+  <p>Vamos utilizar a tag <code>&lt;picture&gt;</code>:</p>
+  <!-- Introdução ao uso da tag picture -->
+
+  <picture> <!-- Container que permite definir diferentes imagens para diferentes tamanhos de tela -->
+    <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+    <!-- Se a tela tiver até 600px, usa esta imagem (pequena) -->
+
+    <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <!-- Se a tela tiver até 1000px (e mais que 600px), usa esta imagem (média) -->
+
+    <img src="imagens/foto-g.png" alt="Imagem em tamanho grande">
+    <!-- Imagem padrão que será exibida se nenhuma das condições acima for atendida (telas grandes) -->
+  </picture>
+
+  <hr>
+
+  <!-- Caixa de passo a passo visível no site -->
+  <div class="passo-a-passo">
+    <h2>🔍 Passo a passo para usar imagens dinâmicas com &lt;picture&gt;</h2>
+    <ol>
+      <li><strong>Organize suas imagens:</strong> Crie versões da imagem em tamanhos diferentes (ex.: pequeno, médio e grande).</li>
+      <li><strong>Renomeie corretamente:</strong> Use nomes simples, sem espaços e sem acentos (ex.: foto-p.png, foto-m.png, foto-g.png).</li>
+      <li><strong>Use a tag &lt;picture&gt;:</strong> Ela será o container para definir as condições de exibição.</li>
+      <li><strong>Dentro de &lt;picture&gt;, adicione &lt;source&gt;:</strong> Cada &lt;source&gt; define um tamanho de tela usando <code>media="(max-width:...)"</code>.</li>
+      <li><strong>Coloque uma tag &lt;img&gt; no final:</strong> Esta é a imagem padrão, exibida se nenhuma condição dos &lt;source&gt; for atendida.</li>
+      <li><strong>Teste:</strong> Diminua e aumente o tamanho do navegador ou acesse por celulares, tablets e PCs.</li>
+    </ol>
+  </div>
+
+</body> <!-- Fim do corpo do site -->
+
+</html> <!-- Fim do documento HTML -->
